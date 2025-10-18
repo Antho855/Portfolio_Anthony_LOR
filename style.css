@@ -20,6 +20,7 @@ header {
     width: 100%;
 }
 
+
 h1, h2 {
     font-family: 'Calistoga';
     margin:0;
@@ -100,6 +101,10 @@ h1 {
     margin-right: 5px;
     text-decoration: none;
     display: inline-block;
+}
+
+.communication {
+    margin-bottom: 5px;
 }
 
 /* --- AUTRES SECTIONS --- */
