@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="darkModeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="intro">
+            <div class="text">
+                <h1>Anthony LOR</h1>
+                <p>Développeur Web & créateur de jeux vidéo</p>
+                <div class="links">
+                    <a href="https://github.com/Antho855" class="btn">GitHub</a>
+                    <a href="https://www.linkedin.com/in/anthony-lor-764854306/" class="btn">LinkedIn</a>
+                    <a href="mailto:antholor85@gmail.com" class="btn">Email</a>
+                </div>
+            </div>
+            <div class="profile-pic">
+                <img src="photo.jpg" width="300px" height="300px" alt="Photo de profil">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Design</h3>
+                <ul>
+                    <li>Canva</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Front-End</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Back-End</h3>
+                <ul>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>SQLite</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Autres</h3>
+                <ul>
+                    <li>GitLab</li>
+                    <li>GitHub</li>
+                    <li>MS Planner</li>
+                    <li>Office</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">Projet 1</div>
+            <div class="project-card">Projet 2</div>
+            <div class="project-card">Projet 3</div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="contenu" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Portfolio - Anthony LOR</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
