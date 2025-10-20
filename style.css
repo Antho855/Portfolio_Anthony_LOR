@@ -46,7 +46,7 @@ h1, h2 {
     list-style: none;
     display: flex;
     gap: 3rem;
-    margin: 0;
+    margin: 5px;
     padding: 0;
 }
 
