@@ -36,10 +36,12 @@ h1, h2 {
     box-sizing: border-box;
 }
 
+
+
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem;
     margin: 0;
     padding: 0;
 }
