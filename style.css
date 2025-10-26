@@ -55,7 +55,15 @@ h1, h2 {
     margin: auto;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
+
+.navbar i {
+    font-size: 1.2rem;
+}
+
 
 #darkModeToggle {
     border: 1px solid #ffffff;
@@ -120,8 +128,12 @@ ul {
     margin: 0;
 }
 
-nav li a:hover {
-    text-decoration: underline;
+.navbar a.active {
+    color: #007bff;
+}
+
+.navbar a.active i {
+    color: #007bff;
 }
 
 .section {
@@ -157,6 +169,7 @@ nav li a:hover {
 
 .projects-grid {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
@@ -165,14 +178,25 @@ nav li a:hover {
 }
 
 .project-card {
-    width: 250px;
-    height: 150px;
+    width: 50%;
+    height: 250px;
     background: #eaeaea;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* Pairs → à droite */
+.project-card:nth-child(even) {
+    align-self: flex-end;
+}
+
+/* Petit effet visuel au survol */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
 
 form {
     display: flex;
@@ -224,7 +248,8 @@ footer {
 }
 
 footer p {
-    color : #ffffff
+    color : #ffffff;
+    text-align: center;
 }
 
 
@@ -256,4 +281,67 @@ footer p {
 
 .dark-mode h3, .dark-mode .skill-category i{
     color : #ff5c31
+}
+
+.dark-mode .navbar a.active, .dark-mode .navbar a.active i{
+    color: #ff5c31;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #222;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.6rem 0;
+        margin: 0;
+    }
+
+    .navbar li {
+        flex: 1;
+        text-align: center;
+    }
+
+    .navbar a {
+        flex-direction: column;
+        font-size: 0.8rem;
+        color: #fff;
+    }
+
+    nav li a:hover {
+        text-decoration: none;
+    }
+
+    .navbar i {
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .navbar a span {
+        display: none; /* Enlève cette ligne si tu veux garder le texte sous les icônes */
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #222;
+        z-index: 1000;
+    }
+
+    /* Petit espace pour éviter que la barre cache le contenu */
+    body {
+        padding-bottom: 60px;
+    }
+
+
+    .project-card {
+        width: 100%;
+    }
 }
