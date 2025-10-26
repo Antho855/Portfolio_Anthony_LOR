@@ -210,6 +210,10 @@ input, textarea, button[type="submit"] {
     font-size: 1rem;
 }
 
+button[type="submit"] {
+    border: none;
+}
+
 .perso-text {
     display: flex;
     flex-direction: row;
