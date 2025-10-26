@@ -1,6 +1,5 @@
 const toggle = document.getElementById("darkModeToggle");
 
-// Dark mode actif par défaut
 document.body.classList.remove("light-mode");
 
 toggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
@@ -77,3 +76,9 @@ const observer = new IntersectionObserver((entries) => {
 // observe all sections
 sections.forEach(section => observer.observe(section));
 
+window.addEventListener("DOMContentLoaded", () => {
+  // Désactive le scroll fluide
+  document.documentElement.style.scrollBehavior = "auto";
+  // Remet la page instantanément tout en haut
+  window.scrollTo(0, 0);
+});
