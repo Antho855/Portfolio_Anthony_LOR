@@ -75,10 +75,3 @@ const observer = new IntersectionObserver((entries) => {
 
 // observe all sections
 sections.forEach(section => observer.observe(section));
-
-window.addEventListener("DOMContentLoaded", () => {
-  // Désactive le scroll fluide
-  document.documentElement.style.scrollBehavior = "auto";
-  // Remet la page instantanément tout en haut
-  window.scrollTo(0, 0);
-});
