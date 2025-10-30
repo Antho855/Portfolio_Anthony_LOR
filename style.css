@@ -342,10 +342,11 @@ footer p {
   color: #222;
 }
 
-.light-mode p,
-.light-mode h3 {
+.light-mode .project-card p,
+.light-mode .project-card h3 {
   color: #222;
 }
+
 
 .light-mode header {
   background: #222;
