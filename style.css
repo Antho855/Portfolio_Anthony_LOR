@@ -2,8 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -274,6 +275,7 @@ ul {
 
 .project-card a:hover {
   color: #ff5c31;
+  text-decoration: underline;
 }
 
 /* --- FORM --- */
@@ -343,10 +345,10 @@ footer p {
 }
 
 .light-mode .project-card p,
-.light-mode .project-card h3 {
+.light-mode .project-card h3,
+.light-mode .project-card a {
   color: #222;
 }
-
 
 .light-mode header {
   background: #222;
@@ -363,12 +365,18 @@ footer p {
   background-color: #007bff;
 }
 
+.light-mode .project-card a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
 .light-mode .btn:hover,
 .light-mode button:hover {
   background: #0056cc;
 }
 
 .light-mode h3,
+.light-mode .project-card h3,
 .light-mode .skill-category i {
   color: #007bff;
 }
