@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -150,7 +154,7 @@ ul {
 /* --- SKILLS --- */
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -267,7 +271,6 @@ ul {
   padding-left: 1.5rem;
   transition: color 0.3s ease;
 }
-
 
 .project-card a:hover {
   color: #ff5c31;
@@ -405,13 +408,11 @@ footer p {
     text-align: left;
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    padding: 0 2rem;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
   }
 }
