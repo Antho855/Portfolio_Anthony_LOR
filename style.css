@@ -474,12 +474,15 @@ footer p {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .intro {
     flex-direction: row;
     justify-content: space-around;
     text-align: left;
   }
+}
+
+@media (min-width: 900px) {
   .projects-grid {
     max-width: 1500px;
     grid-template-columns: repeat(3, 1fr);
