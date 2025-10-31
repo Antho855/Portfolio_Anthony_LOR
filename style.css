@@ -447,6 +447,7 @@ footer p {
     gap: 2rem;
     padding: 0 auto;
     max-width: 1500px;
+    margin: 4rem auto;
   }
 
   .projects-grid {
