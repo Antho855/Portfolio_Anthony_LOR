@@ -469,10 +469,6 @@ footer p {
     grid-area: third;
   }
 
-  /* Les projets suivants reprennent la disposition classique */
-  .project-card:nth-child(n + 4) {
-    grid-column: span 1;
-  }
 }
 
 @media (min-width: 800px) {
