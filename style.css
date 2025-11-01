@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -23,12 +27,16 @@ header {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
 }
 
-h1 {
-  font-size: 60px;
+#education h2, #skills h2, #projects h2, #contact h2 {
+    text-align: center;
+}
+
+.intro h1 {
+  font-size: 40px;
   margin: 0;
 }
 
@@ -52,54 +60,39 @@ ul {
   border: solid 1.5px #ffffff;
 }
 
-/* --- MOBILE DEFAULT NAVBAR --- */
+
 .navbar ul {
-  position: fixed;
-  bottom: 90px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 75%;
-  background: #1f1f1f;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem 0.5rem;
-  margin: 0;
-  border-radius: 25px;
+  gap: 2.5rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar li {
-  flex: 1;
   text-align: center;
 }
 
 .navbar a {
-  flex-direction: column;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #fff;
-  margin: auto;
   text-decoration: none;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.navbar ul i {
-  display: inline;
-  font-size: 1.4rem;
-  margin-bottom: 0.2rem;
+  transition: color 0.3s ease;
 }
 
 .navbar a span {
-  display: none;
+    display: none;
 }
 
-.navbar a.active,
-.navbar a.active i {
+.navbar a i {
+    font-size: 20px;
+}
+
+.navbar a:hover {
   color: #ff5c31;
 }
+
 
 #darkModeToggle {
   border: 1.5px solid #ffffff;
@@ -113,15 +106,14 @@ ul {
 
 /* --- SECTIONS --- */
 .section {
-  padding: 8rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .home-section {
-  height: 100vh;
+  height: 550px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 6rem 2rem 0 2rem;
+  padding: 0 2rem 0 2rem;
   box-sizing: border-box;
   text-align: center;
 }
@@ -136,6 +128,8 @@ ul {
 }
 
 .profile-pic img {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: solid 5px #ff5c31;
   object-fit: cover;
@@ -149,6 +143,47 @@ ul {
   margin: 5px 5px 0 0;
   text-decoration: none;
   display: inline-block;
+}
+
+/* --- Parcours ---*/
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 1500px;
+}
+
+.education-card {
+  background: #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+.education-card h3 {
+  color: #ff5c31;
+  margin-bottom: 0.5rem;
+}
+
+.education-card .school {
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.education-card .year {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-card .description {
+  color: #ddd;
+  font-size: 0.95rem;
 }
 
 /* --- SKILLS --- */
@@ -167,10 +202,6 @@ ul {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-}
 
 .skill-category i {
   margin-right: 10px;
@@ -333,9 +364,7 @@ button[type="submit"] {
   gap: 1rem;
 }
 
-textarea {
-  resize: none;
-}
+
 
 button {
   background: #ff5c31;
@@ -413,34 +442,49 @@ footer p {
   background: rgba(0, 86, 204, 0.25);
 }
 
-.light-mode .navbar a.active,
-.light-mode .navbar a.active i {
+
+
+.light-mode .education-card {
+  background: #f4f4f4;
+}
+
+
+.light-mode .education-card h3 {
   color: #007bff;
+}
+
+.light-mode .education-card .school {
+  color: #222;
+}
+
+.light-mode .education-card .year {
+  color: #666;
+}
+
+.light-mode .education-card .description {
+  color: #333;
 }
 
 /* --- TABLETTE ET + --- */
 @media (min-width: 750px) {
-  .navbar ul {
-    position: static;
-    transform: none;
-    width: auto;
-    background: transparent;
-    display: flex;
-    gap: 3rem;
-    padding: 0;
-    border-radius: 0;
-  }
 
-  .navbar ul i {
-    display: none;
-  }
-
-  .navbar a span {
+  .navbar a span{
     display: inline;
   }
+  .navbar a i {
+    display: none;
+  }
+  .intro h1 {
+    font-size: 60px;
+  }
 
-  .navbar a {
-    font-size: 1rem;
+  .intro h2 {
+    font-size: 40px;
+  }
+
+  .profile-pic img {
+    width: 300px;
+    height: 300px;
   }
 
   .skills-grid {

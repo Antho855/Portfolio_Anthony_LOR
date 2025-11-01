@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link rel="icon" type="image/vnd.icon" href="/docs/logo.png">
+    <link rel="icon" type="image/vnd.icon" href="/docs/logo-dark.png">
 
     <link rel="stylesheet" href="style.css">
 
@@ -15,9 +15,9 @@
         <nav class="navbar">
             <img src="docs/logo-dark.png" class="logo dark-logo" width="40">
             <ul>
-                <li><a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
-                <li><a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a></li>
-                <li><a href="#projects"><i class="fa-solid fa-folder-open"></i><span>Projects</span></a></li>
+                <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i><span>Parcours</span></a></li>
+                <li><a href="#skills"><i class="fa-solid fa-code"></i><span>Outils</span></a></li>
+                <li><a href="#projects"><i class="fa-solid fa-folder-open"></i><span>Projets</span></a></li>
                 <li><a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
             </ul>
             <button id="darkModeToggle">
@@ -29,21 +29,40 @@
     <section id="home" class="home-section">
         <div class="intro">
             <div class="text">
-                <h2>Hi i'm</h2>
-                <h1>Anthony LOR</h1>
-                <p>CS Student and Web Developer</p>
+                <h2>Bonjour je suis Anthony Lor</h2>
+                <p>Actuellement étudiant, je suis passionné par <br>le développement web et la création de jeux vidéo</p>
                 <div class="links">
                     <div class="communication">
                         <a href="https://github.com/Antho855" class="btn">GitHub</a>
                         <a href="https://www.linkedin.com/in/anthony-lor-764854306/" class="btn">LinkedIn</a>
-                        <a href="mailto:antholor85@gmail.com" class="btn">antholor85@gmail.com</a>
                     </div>
                     <a href="/docs/CV_Lor_Anthony.pdf" download class="btn">Download CV</a>
                 </div>
             </div>
             <div class="profile-pic">
-                <img src="/docs/photo.jpg" width="300px" height="300px" alt="Photo de profil">
+                <img src="/docs/photo.jpg" alt="Photo de profil">
             </div>
+        </div>
+    </section>
+
+    <section id="education" class="section education-section">
+        <h2>Mon parcours</h2>
+
+        <div class="education-grid">
+            <div class="education-card">
+                <h3>BUT Informatique</h3>
+                <p class="school">IUT Reims-Châlons-Charleville, Reims</p>
+                <p class="year">Sept 2024 - ...</p>
+                <p class="description">Spécialisation développement (C++)</p>
+            </div>
+
+            <div class="education-card">
+                <h3>Baccalauréat Général</h3>
+                <p class="school">Lycée Hugues Libergier</p>
+                <p class="year">Juin 2024</p>
+                <p class="description">Mathématiques, Numérique et Sciences de l'Informatique</p>
+            </div>
+
         </div>
     </section>
 
@@ -71,8 +90,8 @@
                 <h3>Back-End</h3>
                 <ul>
                     <li><i class="fa-brands fa-php"></i> PHP</li>
-                    <li><i class="fa-solid fa-database"></i> MySQL</li>
-                    <li><i class="fa-solid fa-database"></i> SQLite</li>
+                    <li><i class="fa-solid fa-database"></i> SQL - PL/SLQ</li>
+                    <li><i class="fa-brands fa-python"></i> Python</li>
                 </ul>
             </div>
 
@@ -128,6 +147,9 @@
             <textarea name="contenu" placeholder="Your message" rows="6" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
+        <h3>Me contacter</h3>
+        <p>antholor85@gmail.com</p>
+        
     </section>
 
     <footer>
