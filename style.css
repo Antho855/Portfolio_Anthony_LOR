@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -31,8 +31,11 @@ h2 {
   margin: 0;
 }
 
-#education h2, #skills h2, #projects h2, #contact h2 {
-    text-align: center;
+#education h2,
+#skills h2,
+#projects h2,
+#contact h2 {
+  text-align: center;
 }
 
 .intro h1 {
@@ -41,7 +44,7 @@ h2 {
 }
 
 .intro span {
-    color: #ff5c31;
+  color: #ff5c31;
 }
 
 ul {
@@ -64,7 +67,6 @@ ul {
   border: solid 1.5px #ffffff;
 }
 
-
 .navbar ul {
   display: flex;
   gap: 2.5rem;
@@ -86,17 +88,16 @@ ul {
 }
 
 .navbar a span {
-    display: none;
+  display: none;
 }
 
 .navbar a i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .navbar a:hover {
   color: #ff5c31;
 }
-
 
 #darkModeToggle {
   border: 1.5px solid #ffffff;
@@ -168,7 +169,6 @@ ul {
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-
 .education-card h3 {
   color: #ff5c31;
   margin-bottom: 0.5rem;
@@ -205,7 +205,6 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .skill-category i {
   margin-right: 10px;
@@ -368,8 +367,6 @@ button[type="submit"] {
   gap: 1rem;
 }
 
-
-
 button {
   background: #ff5c31;
   color: white;
@@ -446,12 +443,9 @@ footer p {
   background: rgba(0, 86, 204, 0.25);
 }
 
-
-
 .light-mode .education-card {
   background: #f4f4f4;
 }
-
 
 .light-mode .education-card h3 {
   color: #007bff;
@@ -469,10 +463,8 @@ footer p {
   color: #333;
 }
 
-/* --- TABLETTE ET + --- */
-@media (min-width: 750px) {
-
-  .navbar a span{
+@media (min-width: 600px) {
+  .navbar a span {
     display: inline;
   }
   .navbar a i {
@@ -481,11 +473,11 @@ footer p {
   .intro h1 {
     font-size: 60px;
   }
-
+}
+@media (min-width: 750px) {
   .intro h2 {
     font-size: 40px;
   }
-
 
   .skills-grid {
     gap: 2rem;
@@ -512,7 +504,6 @@ footer p {
   .project-card:nth-child(3) {
     grid-area: third;
   }
-
 }
 
 @media (min-width: 800px) {
