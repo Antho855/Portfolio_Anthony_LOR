@@ -199,7 +199,7 @@ ul {
 }
 
 .skill-category {
-  background: #2e2e2e;
+  background: #333;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -444,10 +444,10 @@ footer p {
 }
 
 .light-mode .education-card {
-  background: #f4f4f4;
+  background: #eaeaea;
 }
 
-.light-mode .education-card h3 {
+.light-mode .education-card h3, .light-mode .intro span{
   color: #007bff;
 }
 
