@@ -367,11 +367,24 @@ button[type="submit"] {
   gap: 1rem;
 }
 
+textarea {
+  resize: none;
+}
+
 button {
   background: #ff5c31;
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    margin-top: 1.5rem;
 }
 
 button:hover,
@@ -465,7 +478,7 @@ footer p {
   color: #333;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .navbar a span {
     display: inline;
   }
@@ -528,4 +541,16 @@ footer p {
     grid-template-areas: "first second third";
     margin: 4rem auto;
   }
+
+  form {
+    margin: 2rem 0;
+  }
+
+  .form-info {
+    flex-direction: row;
+    justify-content: center;
+    gap : 3rem
+  }
+
+  
 }
