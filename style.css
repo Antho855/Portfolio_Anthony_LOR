@@ -379,12 +379,18 @@ button {
 }
 
 .form-info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .info {
-    margin-top: 1.5rem;
+  padding: 1rem;
+  margin: 0 auto 0 0;
+  max-width: 600px;
+}
+
+.info h3 {
+  color: #ff5c31;
 }
 
 button:hover,
@@ -445,7 +451,7 @@ footer p {
 .light-mode h3,
 .light-mode .project-card h3,
 .light-mode .skill-category i,
-.light-mode .navbar a:hover{
+.light-mode .navbar a:hover {
   color: #007bff;
 }
 
@@ -462,7 +468,7 @@ footer p {
 }
 
 .light-mode .education-card h3,
-.light-mode .intro span{
+.light-mode .intro span {
   color: #007bff;
 }
 
@@ -498,7 +504,22 @@ footer p {
     gap: 2rem;
     padding: 0 auto;
     max-width: 1500px;
-    margin: 4rem auto;
+    margin: 2rem auto;
+  }
+
+  
+}
+
+@media (min-width: 800px) {
+  .intro {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .profile-pic img {
+    width: 300px;
+    height: 300px;
   }
 
   .projects-grid {
@@ -521,36 +542,22 @@ footer p {
   }
 }
 
-@media (min-width: 800px) {
-  .intro {
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: left;
-  }
-
-  .profile-pic img {
-    width: 300px;
-    height: 300px;
-  }
-}
-
 @media (min-width: 900px) {
   .projects-grid {
     max-width: 1500px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "first second third";
-    margin: 4rem auto;
+    margin: 2rem auto;
   }
 
-  form {
-    margin: 2rem 0;
-  }
 
   .form-info {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    gap : 3rem
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    max-width: 1200px;
   }
-
-  
 }
