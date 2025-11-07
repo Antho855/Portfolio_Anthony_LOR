@@ -13,11 +13,12 @@ toggle.addEventListener("click", () => {
     }
 });
 
-// --- Form ---
-document.getElementById("contactForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Message envoyé ! Merci de votre contact 😊");
-    e.target.reset();
+
+// Désactive le smooth au chargement
+document.documentElement.style.scrollBehavior = "auto";
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+  }, 100);
 });
-
-

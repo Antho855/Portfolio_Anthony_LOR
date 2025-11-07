@@ -2,10 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
 
 body {
   font-family: "Arial", sans-serif;
@@ -156,7 +152,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   margin-top: 2rem;
   max-width: 1500px;
 }
@@ -342,9 +338,11 @@ form {
   gap: 1rem;
   max-width: 600px;
   margin: 2rem auto 0 auto;
-  padding: 10px;
+  padding: 0 0 30px 0;
   width: 100%;
   box-sizing: border-box;
+  border-bottom: 5px solid white;
+  
 }
 
 input,
@@ -385,8 +383,9 @@ button {
 
 .info {
   padding: 1rem;
-  margin: 0 auto 0 0;
+  margin: 0 auto 0 auto;
   max-width: 600px;
+  text-align: center;
 }
 
 .info h3 {
@@ -550,14 +549,4 @@ footer p {
     margin: 2rem auto;
   }
 
-
-  .form-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-    margin: 1rem auto;
-    max-width: 1200px;
-  }
 }
