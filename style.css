@@ -201,12 +201,17 @@ ul {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-category i {
+.skill-category i{
   margin-right: 10px;
   color: #ff5c31;
   font-size: 1.2rem;
   width: 25px;
   text-align: center;
+}
+
+.skill-category img{
+  margin-right: 10px;
+  font-size: 1.2rem;
 }
 
 .skill-category h3 {
