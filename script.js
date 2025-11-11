@@ -14,11 +14,30 @@ toggle.addEventListener("click", () => {
 });
 
 
-// Désactive le smooth au chargement
 document.documentElement.style.scrollBehavior = "auto";
 
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.documentElement.style.scrollBehavior = "smooth";
   }, 100);
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const animatedSections = document.querySelectorAll(
+        "section, .section, .home-section"
+    );
+    animatedSections.forEach(sec => {
+        sec.classList.add("fade-section");
+    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+
+        });
+    }, { threshold: 0.15 });
+    animatedSections.forEach(sec => observer.observe(sec));
 });
