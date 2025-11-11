@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -188,7 +187,7 @@ ul {
 /* --- SKILLS --- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin: 2rem auto;
 }
@@ -201,18 +200,6 @@ ul {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-category i{
-  margin-right: 10px;
-  color: #ff5c31;
-  font-size: 1.2rem;
-  width: 25px;
-  text-align: center;
-}
-
-.skill-category img{
-  margin-right: 10px;
-  font-size: 1.2rem;
-}
 
 .skill-category h3 {
   color: #ff5c31;
@@ -226,8 +213,11 @@ ul {
 }
 
 .skill-category li {
+  display: flex;
+  align-items: center;
   padding: 0.6rem 0.8rem;
   border-radius: 8px;
+  gap:20px;
   transition: background 0.3s ease;
 }
 
@@ -346,7 +336,6 @@ form {
   width: 100%;
   box-sizing: border-box;
   border-bottom: 5px solid white;
-  
 }
 
 input,
@@ -487,14 +476,14 @@ footer p {
 }
 
 .fade-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-section.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (min-width: 700px) {
@@ -519,8 +508,6 @@ footer p {
     max-width: 1500px;
     margin: 2rem auto;
   }
-
-  
 }
 
 @media (min-width: 800px) {
@@ -561,5 +548,4 @@ footer p {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "first second third";
   }
-
 }
