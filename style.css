@@ -385,6 +385,10 @@ footer p {
   background-color: #007bff;
 }
 
+.light-mode .info span {
+    color : #007bff
+}
+
 .light-mode .project-card a:hover {
   color: #007bff;
   text-decoration: underline;
