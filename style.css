@@ -332,6 +332,18 @@ button {
   cursor: pointer;
 }
 
+button,
+.communication a,
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover,
+.communication a:hover,
+.btn:hover {
+    background-color: #d04d29;
+}
+
 /* --- CONTACT --- */
 
 .info {
