@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     const animatedSections = document.querySelectorAll(
-        "section, .section, .home-section"
+        ".section"
     );
     animatedSections.forEach(sec => {
         sec.classList.add("fade-section");
