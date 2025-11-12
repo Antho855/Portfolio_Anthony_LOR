@@ -110,7 +110,7 @@ ul {
 }
 
 .home-section {
-  height: 580px;
+  height: 630px;
   display: flex;
   justify-content: center;
   padding: 0 2rem 0 2rem;
@@ -457,6 +457,8 @@ footer p {
   opacity: 1;
   transform: translateY(0);
 }
+
+
 
 @media (min-width: 700px) {
   .navbar a span {
