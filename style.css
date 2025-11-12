@@ -64,7 +64,7 @@ ul {
 
 .navbar ul {
   display: flex;
-  gap: 2.5rem;
+  gap: 2.3rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -460,7 +460,7 @@ footer p {
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 620px) {
   .navbar a span {
     display: inline;
   }
