@@ -25,29 +25,12 @@ window.addEventListener("load", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const animatedSections = document.querySelectorAll(
-        ".section"
-    );
-    animatedSections.forEach(sec => {
-        sec.classList.add("fade-section");
-    });
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
+  // Sélectionne toutes les sections à animer
+  const sections = document.querySelectorAll(".section");
 
-        });
-    }, { threshold: 0.15 });
-    animatedSections.forEach(sec => observer.observe(sec));
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const fadeSections = document.querySelectorAll(".fade-section");
-
-  // Alterne gauche/droite automatiquement
-  fadeSections.forEach((section, index) => {
+  // Ajoute les classes de base et alterne les directions
+  sections.forEach((section, index) => {
+    section.classList.add("fade-section");
     if (index % 2 === 0) {
       section.classList.add("from-left");
     } else {
@@ -55,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // IntersectionObserver pour déclencher les effets
+  // Crée un seul IntersectionObserver
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -64,8 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.2 } // visible à 20%
+    { threshold: 0.2 } // Déclenche quand 20% est visible
   );
 
-  fadeSections.forEach((section) => observer.observe(section));
+  // Observe chaque section
+  sections.forEach((section) => observer.observe(section));
 });
+
+
+

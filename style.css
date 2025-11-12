@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -64,7 +69,7 @@ ul {
 
 .navbar ul {
   display: flex;
-  gap: 2.3rem;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -470,7 +475,7 @@ footer p {
 
 
 
-@media (min-width: 620px) {
+@media (min-width: 680px) {
   .navbar a span {
     display: inline;
   }
@@ -479,6 +484,10 @@ footer p {
   }
   .intro h1 {
     font-size: 60px;
+  }
+
+  .navbar ul {
+    gap: 2rem;
   }
 }
 @media (min-width: 750px) {
