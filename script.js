@@ -41,3 +41,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.15 });
     animatedSections.forEach(sec => observer.observe(sec));
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeSections = document.querySelectorAll(".fade-section");
+
+  // Alterne gauche/droite automatiquement
+  fadeSections.forEach((section, index) => {
+    if (index % 2 === 0) {
+      section.classList.add("from-left");
+    } else {
+      section.classList.add("from-right");
+    }
+  });
+
+  // IntersectionObserver pour déclencher les effets
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.2 } // visible à 20%
+  );
+
+  fadeSections.forEach((section) => observer.observe(section));
+});
