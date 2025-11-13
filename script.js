@@ -24,35 +24,25 @@ window.addEventListener("load", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  // Sélectionne toutes les sections à animer
   const sections = document.querySelectorAll(".section");
 
-  // Ajoute les classes de base et alterne les directions
-  sections.forEach((section, index) => {
-    section.classList.add("fade-section");
-    if (index % 2 === 0) {
-      section.classList.add("from-left");
-    } else {
-      section.classList.add("from-right");
-    }
-  });
+  // Ajoute la classe fade-section à toutes les sections
+  sections.forEach(sec => sec.classList.add("fade-section"));
 
   // Crée un seul IntersectionObserver
   const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
+    entries => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
         }
       });
     },
-    { threshold: 0.2 } // Déclenche quand 20% est visible
+    { threshold: 0.2 } // visible à 20%
   );
 
   // Observe chaque section
-  sections.forEach((section) => observer.observe(section));
+  sections.forEach(sec => observer.observe(sec));
 });
-
 
 

@@ -456,24 +456,15 @@ footer p {
 
 .fade-section {
   opacity: 0;
+  transform: translateX(-40px); /* Toujours depuis la gauche */
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* Par défaut, entre depuis la droite */
-.fade-section.from-right {
-  transform: translateX(40px);
-}
-
-/* Alterne : entre depuis la gauche */
-.fade-section.from-left {
-  transform: translateX(-40px);
-}
-
-/* Quand visible à l’écran */
 .fade-section.visible {
   opacity: 1;
   transform: translateX(0);
 }
+
 
 
 
