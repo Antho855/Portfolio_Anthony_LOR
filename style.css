@@ -476,6 +476,10 @@ footer p {
   color: #333;
 }
 
+.light-mode .info a::after {
+  background-color: #007bff;
+}
+
 .fade-section {
   opacity: 0;
   transform: translateX(-40px); /* Toujours depuis la gauche */
