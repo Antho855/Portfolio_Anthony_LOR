@@ -257,6 +257,13 @@ ul {
   cursor: pointer;
   padding: 1.5rem;
   box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover {
+    border: #ff5c31 2px solid;
 }
 
 .project-description {
@@ -270,16 +277,6 @@ ul {
   color: #ff5c31;
 }
 
-.project-card img {
-  width: 80%;
-  opacity: 0.6;
-  height: auto;
-  max-height: 180px;
-  object-fit: contain;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
 
 .project-description h3 {
   margin: 0 0 0.5rem 0;
@@ -307,31 +304,20 @@ ul {
 }
 
 .project-card img {
-  width: 100%;
+  opacity: 0.6;
   height: auto;
-  object-fit: contain;
+  max-height: 180px;
   border-radius: 8px;
+  width: 100%;
+  object-fit: contain;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.project-card img:hover{
-  transform: scale(1.08);
-  opacity: 0.9;
+.project-card:hover img {
+    transform: scale(1.05);
+    opacity: 1;
 }
-
-.project-card a {
-  color: #ffffff;
-  margin-top: 1rem;
-  align-self: flex-start;
-  padding-left: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.project-card a:hover {
-  color: #ff5c31;
-  text-decoration: underline;
-}
-
 
 button {
   background: #ff5c31;
@@ -430,10 +416,11 @@ footer p {
     color : #007bff
 }
 
-.light-mode .project-card a:hover {
-  color: #007bff;
-  text-decoration: underline;
+.light-mode .project-card:hover
+{
+    border-color:#007bff
 }
+
 
 .light-mode .btn:hover,
 .light-mode button:hover {
