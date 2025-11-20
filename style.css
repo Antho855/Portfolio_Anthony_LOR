@@ -168,6 +168,7 @@ ul {
   border-radius: 12px;
   padding: 1.5rem;
   text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
@@ -259,6 +260,7 @@ ul {
   box-sizing: border-box;
   text-decoration: none;
   color: inherit;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -317,6 +319,34 @@ ul {
 .project-card:hover img {
     transform: scale(1.05);
     opacity: 1;
+}
+
+.false-link {
+  font-size: 0.9rem;
+  color: white;
+  padding-top: 20px;
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.false-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #ff5c31;
+  transition: width 0.3s ease;
+}
+
+.false-link:hover {
+  color: #ff5c31;
+}
+
+.false-link:hover::after {
+  width: 100%;
 }
 
 button {
@@ -412,13 +442,14 @@ footer p {
   background-color: #007bff;
 }
 
-.light-mode .info span {
+.light-mode .info span,
+.light-mode .false-link:hover {
     color : #007bff
 }
 
 .light-mode .project-card:hover
 {
-    border-color:#007bff
+  border-color:#007bff
 }
 
 
@@ -463,6 +494,7 @@ footer p {
   color: #333;
 }
 
+.light-mode .false-link::after,
 .light-mode .info a::after {
   background-color: #007bff;
 }
