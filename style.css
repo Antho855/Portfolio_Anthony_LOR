@@ -290,7 +290,6 @@ ul {
   margin: 0;
   font-size: 1rem;
   line-height: 1.4;
-  color: #ddd;
 }
 
 .project-description {
@@ -321,9 +320,10 @@ ul {
     opacity: 1;
 }
 
+
 .false-link {
   font-size: 0.9rem;
-  color: white;
+  color: #ff5c31;
   padding-top: 20px;
   position: relative;
   cursor: pointer;
@@ -411,11 +411,6 @@ footer p {
   color: #222;
 }
 
-.light-mode .project-card p,
-.light-mode .project-card h3,
-.light-mode .project-card a {
-  color: #222;
-}
 
 .light-mode header {
   background: #222;
@@ -426,6 +421,12 @@ footer p {
   background: #eaeaea;
 }
 
+.light-mode .project-card p,
+.light-mode .project-card h3,
+.light-mode .project-card a {
+  color: #222;
+}
+
 .light-mode .btn,
 .light-mode button,
 .light-mode .profile-pic img {
@@ -433,6 +434,7 @@ footer p {
   background-color: #007bff;
 }
 
+.light-mode .false-link,
 .light-mode .info span,
 .light-mode .false-link:hover {
     color : #007bff
@@ -442,6 +444,7 @@ footer p {
 {
   border-color:#007bff
 }
+
 
 
 .light-mode .btn:hover,
