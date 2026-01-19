@@ -118,7 +118,7 @@ ul {
 }
 
 .home-section {
-  height: 670px;
+  height: 730px;
   display: flex;
   justify-content: center;
   padding: 0 2rem 0 2rem;
@@ -136,7 +136,7 @@ ul {
 }
 
 .fast-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .profile-pic img {
