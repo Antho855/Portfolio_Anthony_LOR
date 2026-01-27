@@ -136,8 +136,12 @@ ul {
 }
 
 .fast-description {
-    font-size: 1.1rem;
+  max-width: 460px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin: 1rem 0;
 }
+
 
 .profile-pic img {
   width: 200px;
