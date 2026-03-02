@@ -273,7 +273,7 @@ ul {
 }
 
 .project-card:hover {
-    border: #ff5c31 2px solid;
+    background: rgba(255, 92, 49, 0.2);
 }
 
 .project-description {
@@ -450,7 +450,7 @@ footer p {
 
 .light-mode .project-card:hover
 {
-  border-color:#007bff
+  background: rgba(0, 86, 204, 0.25);
 }
 
 
