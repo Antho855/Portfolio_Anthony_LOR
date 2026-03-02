@@ -238,10 +238,6 @@ ul {
   transition: background 0.3s ease;
 }
 
-.skill-category li:hover {
-  background: rgba(255, 92, 49, 0.2);
-}
-
 /* --- PROJECTS --- */
 .projects-grid {
   display: grid;
@@ -454,7 +450,6 @@ footer p {
 }
 
 
-
 .light-mode .btn:hover,
 .light-mode button:hover {
   background: #0056cc;
@@ -469,10 +464,6 @@ footer p {
 
 .light-mode .skill-category h3 {
   border-bottom: 2px solid #007bff;
-}
-
-.light-mode .skill-category li:hover {
-  background: rgba(0, 86, 204, 0.25);
 }
 
 .light-mode .education-card {
