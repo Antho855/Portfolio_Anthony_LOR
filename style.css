@@ -66,7 +66,12 @@ ul {
 
 .navbar img {
   border-radius: 50%;
+  transition: border 0.3s ease;
   border: solid 1.5px #ffffff;
+}
+
+.navbar img:hover {
+  border: solid 1.5px #ff5c31;
 }
 
 .navbar ul {
@@ -437,6 +442,10 @@ footer p {
 
 .light-mode header {
   background: #222;
+}
+
+.light-mode .navbar img:hover {
+  border: solid 1.5px #0056cc;
 }
 
 .light-mode .project-card,
