@@ -157,14 +157,36 @@ ul {
   object-fit: cover;
 }
 
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "github linkedin"
+    "cv cv";
+  gap: 12px;
+  width: 250px;
+  margin: auto;
+}
+
+.github {
+  grid-area: github;
+}
+
+.linkedin {
+  grid-area: linkedin;
+}
+
+.cv {
+  grid-area: cv;
+}
+
 .links .btn {
   background: #ff5c31;
   color: white;
   padding: 10px 15px;
   border-radius: 8px;
-  margin: 5px 5px 0 0;
   text-decoration: none;
-  display: inline-block;
+  text-align: center;
 }
 
 /* --- Parcours ---*/
@@ -361,6 +383,7 @@ button {
   border: none;
   cursor: pointer;
 }
+
 
 button,
 .communication a,
@@ -569,6 +592,10 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
     text-align: left;
+  }
+
+  .links {
+    margin: 0;
   }
 
   .intro h2 {
