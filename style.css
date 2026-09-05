@@ -560,6 +560,41 @@ footer p {
   transform: translateX(0);
 }
 
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  background: #ff5c31;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#backToTop.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTop:hover {
+  background: #d04d29;
+}
+
 
 
 

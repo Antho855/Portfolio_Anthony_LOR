@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Ajoute la classe fade-section à toutes les sections
   sections.forEach(sec => sec.classList.add("fade-section"));
 
-  // Crée un seul IntersectionObserver
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -38,11 +37,29 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.2 } // visible à 20%
+    { threshold: 0.2 }
   );
 
   // Observe chaque section
   sections.forEach(sec => observer.observe(sec));
 });
 
+// Gestion du bonton pour remonter
+const backToTop = document.getElementById("backToTop");
 
+// Affiche le bouton après 300px de scroll
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backToTop.classList.add("visible");
+    } else {
+        backToTop.classList.remove("visible");
+    }
+});
+
+// Remonte en haut de la page
+backToTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
