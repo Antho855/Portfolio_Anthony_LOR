@@ -100,7 +100,7 @@ ul {
 }
 
 .navbar a i {
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .navbar a:hover {
@@ -112,10 +112,13 @@ ul {
   color: #ffffff;
   padding: 6px 12px;
   border-radius: 8px;
-  width: 44px;
+  width: 50px;
   cursor: pointer;
   transition: background 0.3s ease;
-  
+}
+
+#darkModeToggle {
+    font-size: 20px;
 }
 
 /* --- SECTIONS --- */
@@ -301,6 +304,7 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
+
 
 .project-card:hover {
     background: rgba(255, 92, 49, 0.2);
@@ -613,6 +617,10 @@ footer p {
 
   .navbar ul {
     gap: 2rem;
+  }
+  
+  .links {
+    width: 350px;
   }
 }
 @media (min-width: 750px) {
