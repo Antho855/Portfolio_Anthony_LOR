@@ -601,6 +601,10 @@ footer p {
   background: #d04d29;
 }
 
+.light-mode #backToTop {
+    background-color: #007bff;
+}
+
 
 
 
